@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Ambiente virtual
+venv/
+ENV/
+
+# Logs e databases
+*.log
+*.sqlite
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos sensíveis
+*.env
+*.pem
+*.key
+credentials.json
+
+# Arquivos grandes
+*.csv
+*.pkl
+*.h5
+
+# Diretórios específicos do projeto
+/data/raw/
+/models/temp/
+/logs/
