@@ -2,8 +2,3 @@ streamlit
 numpy
 pandas
 scikit-learn
-matplotlib
-seaborn
-imbalanced-learn
-xgboost
--e .
