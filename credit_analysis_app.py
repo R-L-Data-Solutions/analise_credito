@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from enhanced_model import treinar_modelo_avancado, analisar_novo_caso
+from .enhanced_model import treinar_modelo_avancado, analisar_novo_caso
 
 def format_currency(value):
     """Formata valor em reais"""
@@ -66,12 +66,13 @@ def ajustar_taxa_juros(valor, prazo_meses, score_credito):
 def main():
     # Configuração da página
     st.set_page_config(
-        page_title="Sistema de Análise de Crédito",
+        page_title="Análise de Crédito",
+        page_icon="💰",
         layout="wide"
     )
     
     # Título principal
-    st.title("Sistema de Análise de Crédito")
+    st.title("Sistema de Análise de Crédito 💰")
     
     # Criar colunas para organizar o layout
     col1, col2 = st.columns(2)
