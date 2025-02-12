@@ -3,15 +3,10 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report
+from sklearn.linear_model import LogisticRegression
 import pickle
 import os
-import sys
-from pathlib import Path
-
-# Adiciona o diretório pai ao path
-sys.path.append(str(Path(__file__).resolve().parent.parent))
-
-from analysis.analysis_interest_rate import calcular_taxa_juros
+from analysis_interest_rate import calcular_taxa_juros
 
 # Simular um banco de dados com histórico
 def criar_dados_historicos(n_samples=1000):
@@ -70,7 +65,6 @@ def treinar_modelo_avancado():
     
     # Treinar modelo
     print("\n3. Treinando modelo com features de histórico...")
-    from sklearn.linear_model import LogisticRegression
     model = LogisticRegression(random_state=42)
     model.fit(X_train, y_train)
     

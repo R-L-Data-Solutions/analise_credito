@@ -1,13 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import sys
-from pathlib import Path
-
-# Adiciona o diretório pai ao path
-sys.path.append(str(Path(__file__).resolve().parent.parent))
-
-from core.enhanced_model import treinar_modelo_avancado, analisar_novo_caso
+from enhanced_model import treinar_modelo_avancado, analisar_novo_caso
 
 def format_currency(value):
     """Formata valor em reais"""
