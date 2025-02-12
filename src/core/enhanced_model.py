@@ -1,18 +1,15 @@
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report
 import pickle
 import os
-import sys
-from pathlib import Path
+from src.analysis.analysis_interest_rate import calcular_taxa_juros
 
 # Adiciona o diretório raiz ao path
 root_dir = Path(__file__).resolve().parent.parent
 sys.path.append(str(root_dir))
-
-from analysis.analysis_interest_rate import calcular_taxa_juros
 
 # Simular um banco de dados com histórico
 def criar_dados_historicos(n_samples=1000):
