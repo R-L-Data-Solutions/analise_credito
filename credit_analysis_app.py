@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from .enhanced_model import treinar_modelo_avancado, analisar_novo_caso
+from enhanced_model import treinar_modelo_avancado, analisar_novo_caso
 
 def format_currency(value):
     """Formata valor em reais"""
